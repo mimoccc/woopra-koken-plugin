@@ -1,0 +1,22 @@
+{
+    "name": "Woopra Koken plugin",
+    "version": "0.1",
+    "description": "A Woopra analytics plugin for Koken CMS.",
+    "author": {
+        "name": "Fouad Kada",
+        "link": "http://fouadkada.com",
+        "email": "fouad.kada@gmail.com"
+    },
+    "data": {
+        "tracking_domain": {
+            "label": "Woopra Tracking domain",
+            "info": "The domain name that Woopra needs to track.",
+            "type": "string",
+            "validation": {
+                "type": "regex",
+                "rule": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$",
+                "error_message": "Not a valid domain name."
+            }
+        }
+    }
+}
