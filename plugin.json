@@ -14,7 +14,7 @@
             "type": "string",
             "validation": {
                 "type": "regex",
-                "rule": "^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$",
+                "rule": "^[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,6}$",
                 "error_message": "Not a valid domain name."
             }
         }
